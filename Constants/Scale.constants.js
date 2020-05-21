@@ -1,6 +1,7 @@
 import { I, ii, II, iii, III, IV, v, V, vi, VI, vii, VII } from './General.constants';
 
-export default {
+const scales = {
+    // Major Modes
     ionian: [I, II, III, IV, V, VI, VII],
     dorian: [I, II, iii, IV, V, VI, vii],
     phrygian: [I, ii, iii, IV, V, vi, vii],
@@ -9,3 +10,8 @@ export default {
     aeolian: [I, II, iii, IV, V, vi, vii],
     aeolian: [I, ii, iii, IV, v, vi, vii],
 }
+
+scales.major = scales.ionian;
+
+
+export default scales;
